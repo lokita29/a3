@@ -27,7 +27,7 @@ class Sentence : public Index_item
 {
 public:
     // Constructor for Sentence that accepts a file and reads content into sentence object.
-    Sentence(const std::string & str, const std::string & nameFile);
+    Sentence(const std::string & str, const std::string & contentFile, const std::string nameFile);
     // Provides the file name of the document
     const std::string name();
     // Provides # of words in sentence
@@ -45,7 +45,7 @@ private:
     size_t pos; ///< Start position of the sentence within its document 
     std::string fileName; ///< String with file name
     std::string contentOf; ///< String with  document content
-
+    std::string fileContent;
 };
 
 #endif /* SENTENCE_H */

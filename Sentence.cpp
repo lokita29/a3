@@ -19,9 +19,10 @@
   *
   *   @return nothing
   */
-Sentence::Sentence(const std::string & str, const std::string & nameFile) {
+Sentence::Sentence(const std::string & str, const std::string & contentFile, const std::string nameFile) {
     contentOf = str;
     fileName = nameFile;
+    fileContent = contentFile;
 }
 /**
   *   @brief  Provides the file name of the document in which sentence is in
@@ -84,7 +85,7 @@ const std::string Sentence::content()
   */
 int Sentence::getPos()
 {
- pos = fileName.find(contentOf);
+ pos = fileContent.find(contentOf);
  if (pos!=std::string::npos)
     return pos;
 }
