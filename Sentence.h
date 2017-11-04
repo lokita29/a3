@@ -1,12 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Sentence.h
- * Author: lokita
+/**
+ *  @file    Sentence.h
+ *  @author  Patrick Voyer, Isabella Salinas, Petio Petrov
+ *  @date    10/15/2017
+ *  @version 1.0
+ *
+ *  @brief This class is responsible for sentence objects.
  *
  * Created on November 3, 2017, 12:16 PM
  */
